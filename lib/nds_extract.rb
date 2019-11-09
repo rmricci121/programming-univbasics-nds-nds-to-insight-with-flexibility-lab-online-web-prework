@@ -99,7 +99,8 @@ def movies_with_directors_set(source)
 index = 0 
 movie_and_director = []
 while index < source.length do 
-  movie_and_director << source[index]
+  movie_and_director << source[index] 
+  index += 1
   end
   movie_and_director
 end
