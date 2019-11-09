@@ -100,6 +100,7 @@ movie_and_director = []
 while index < source.length do 
 binding.pry
   movies = source[index]
+  director_name = source[index][:name]
   movie_and_director << movies_with_directors_key
   index += 1
   end
