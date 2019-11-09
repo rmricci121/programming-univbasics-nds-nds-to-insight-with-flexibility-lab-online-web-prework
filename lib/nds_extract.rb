@@ -76,7 +76,7 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
   
 index = 0 
-movie_gross = 0 
+movie_gross = [] 
   while index < collection.length do 
 binding.pry
     studio_name = collection[index][:studio]
