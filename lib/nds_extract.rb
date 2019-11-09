@@ -102,7 +102,7 @@ while index < source.length do
   movies = source[index]
   director_name = source[index][:name]
   director_movie = source[index][:movies]
-  movie_and_director << movies_with_directors_key(director_name, director_movie)
+  movie_and_director << movies_with_director_key(director_name, director_movie)
   index += 1
   end
   movie_and_director
