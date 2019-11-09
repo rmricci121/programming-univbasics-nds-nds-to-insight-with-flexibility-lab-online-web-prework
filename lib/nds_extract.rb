@@ -76,9 +76,9 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
   
 index = 0 
-movie_gross = [] 
+movie_gross = {} 
   while index < collection.length do 
-binding.pry
+#binding.pry
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
     movie_gross << movies_with_director_key(studio_name, gross)
