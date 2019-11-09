@@ -82,7 +82,7 @@ binding.pry
     
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
-    movie_gross = movies_with_director_key(studio_name, gross)
+    movie_gross = {:studio
     index += 1 
   end
   movie_gross
