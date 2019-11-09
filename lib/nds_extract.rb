@@ -80,7 +80,7 @@ movie_gross = []
   while index < collection.length do 
 binding.pry
     gross = collection[index][:worldwide_gross]
-    movie_gross << movie_with_director_name
+    movie_gross += gross
   end
   movie_gross
 end
