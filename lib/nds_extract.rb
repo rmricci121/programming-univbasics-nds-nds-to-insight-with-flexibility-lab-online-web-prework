@@ -78,8 +78,9 @@ def gross_per_studio(collection)
 index = 0 
 movie_gross = []
   while index < collection.length do 
+#binding.pry
     gross = collection[index]
-    movie_gross << movie_with_director_name[:worldwide_gross]
+    movie_gross << movie_with_director_name
   end
   movie_gross
 end
@@ -98,7 +99,6 @@ def movies_with_directors_set(source)
 index = 0 
 movie_and_director = []
 while index < source.length do 
-#binding.pry
   movies = source[index]
   director_name = source[index][:name]
   director_movie = source[index][:movies]
