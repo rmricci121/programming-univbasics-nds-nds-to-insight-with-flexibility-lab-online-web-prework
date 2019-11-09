@@ -100,7 +100,7 @@ index = 0
 movie_and_director = []
 while index < source.length do 
   movies = source[index]
-  movie_and_director << source[movie] 
+  movie_and_director << source[movies] 
   index += 1
   end
   movie_and_director
