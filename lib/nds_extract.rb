@@ -79,6 +79,7 @@ index = 0
 movie_gross = {} 
   while index < collection.length do 
 #binding.pry
+    movies = collection[index]
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
     movie_gross = movies_with_director_key(studio_name, gross)
