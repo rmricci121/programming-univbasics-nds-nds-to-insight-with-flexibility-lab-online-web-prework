@@ -82,7 +82,11 @@ movie_gross = {}
     
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
-    movie_gross[:worldwide_gross] = gross
+    if movie_gross[studio_name] 
+    movie_gross[studio_name] += gross
+  else
+    movie_gross[studio_name] = gross
+  end
     index += 1 
   end
   movie_gross
