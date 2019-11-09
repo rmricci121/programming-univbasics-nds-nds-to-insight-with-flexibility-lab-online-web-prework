@@ -97,7 +97,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
 #binding.pry
 index = 0 
-movie_and_director = [:director_name = {}]
+movie_and_director = []
 while index < source.length do 
   movie_and_director << source[movies]
   end
