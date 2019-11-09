@@ -78,11 +78,11 @@ def gross_per_studio(collection)
 index = 0 
 movie_gross = {} 
   while index < collection.length do 
-binding.pry
+#binding.pry
     
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
-    movie_gross = {:studio
+    movie_gross[:worldwide_gross] = gross
     index += 1 
   end
   movie_gross
