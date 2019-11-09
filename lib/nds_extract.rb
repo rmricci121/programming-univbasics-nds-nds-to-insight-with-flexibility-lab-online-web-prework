@@ -78,7 +78,7 @@ def gross_per_studio(collection)
 index = 0 
 movie_gross = 0 
   while index < collection.length do 
-#binding.pry
+binding.pry
     studio_name = collection[index][:studio]
     gross = collection[index][:worldwide_gross]
     movie_gross << movies_with_director_key(studio_name, gross)
